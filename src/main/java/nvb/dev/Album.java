@@ -6,9 +6,13 @@ import java.util.List;
 
 public class Album {
 
+    private String name;
+    private String artist;
     private final List<Song> songList;
 
-    public Album() {
+    public Album(String name, String artist) {
+        this.name = name;
+        this.artist = artist;
         songList = new ArrayList<>();
     }
 
